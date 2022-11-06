@@ -745,7 +745,6 @@ var dname_Cairo_0 = now_Cairo_0.getDay(),
           var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
           var ids= ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
          
-          var ids_3 = ["dayname_3", "month_3", "daynum_3", "year_3", "hour_3", "minutes_3", "seconds_3", "period_3"];
           var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
           for(var i = 0; i < ids.length; i++)
           document.getElementById(ids[i]).firstChild.nodeValue = values[i];
@@ -778,7 +777,9 @@ var dname_Cairo_0 = now_Cairo_0.getDay(),
           var months_3 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
           var week_3 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
           var values_3 = [week_3[dname_3], months_3[mo_3], dnum_3.pad(2), yr_3, hou_3.pad(2), min_3.pad(2), sec_3.pad(2), pe_3];
-          for(var i = 0; i < ids_3.length; i++)
+          var ids_3 = ["dayname_3", "month_3", "daynum_3", "year_3", "hour_3", "minutes_3", "seconds_3", "period_3"];
+        
+        for(var i = 0; i < ids_3.length; i++)
           document.getElementById(ids_3[i]).firstChild.nodeValue = values_3[i];
 
         var now_5 = now.addDays(5)
